@@ -2,7 +2,7 @@ var chatting = false;
 var limit = 50;
 
 function ping() {
-  sound = new Audio("//alyocord.com/cdn-1/ping.mp3");
+  sound = new Audio("//cdn.alyocord.com/cdn-1/ping.mp3");
   sound.play();
 }
 

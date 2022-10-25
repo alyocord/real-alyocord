@@ -36,7 +36,7 @@ Aimee: hi
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="xavsanims.css">
-  <link rel='icon' type='image/x-icon' href='//alyocord.com/cdn-1/favicon.ico'>
+  <link rel='icon' type='image/x-icon' href='//cdn.alyocord.com/cdn-1/favicon.ico'>
   <script src='//alyocord.com/script.js'></script>
   <title>Alyocord</title>
   <script src="/node_modules/intersection-observer/intersection-observer.js"></script>
@@ -44,7 +44,7 @@ Aimee: hi
 </head>
 <body>
   <center>
-    <br> <img src='//alyocord.com/cdn-1/favicon.ico' height='75' width='75'> <br>
+    <br> <img src='//cdn.alyocord.com/cdn-1/favicon.ico' height='75' width='75'> <br>
     <h1>Alyocord</h1>
     <button class='button' onclick='window.location.href = "//alyocord.com/app/"'>I'm sold! Give me the app already!</button> <br>
     <br>

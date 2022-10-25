@@ -10,7 +10,7 @@ if (!(isset($_SESSION['admin']))) {
 <link href="//cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link rel="stylesheet" href="//alyocord.com/style.css">
 <script src='//alyocord.com/script.js'></script>
-<link rel='icon' type='image/x-icon' href='//alyocord.com/cdn-1/favicon.ico'>
+<link rel='icon' type='image/x-icon' href='//cdn.alyocord.com/cdn-1/favicon.ico'>
 <center>
   <br>
   <button class='button' onclick='window.location.href = "//alyocord.com/";'>Home</button> <br> <br>

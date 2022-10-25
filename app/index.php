@@ -29,13 +29,13 @@ Trickz:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="//cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="../style.css">
-  <link rel='icon' type='image/x-icon' href='//alyocord.com/cdn-1/favicon.ico'>
+  <link rel='icon' type='image/x-icon' href='//cdn.alyocord.com/cdn-1/favicon.ico'>
   <script src='//alyocord.com/script.js'></script>
   <title>Alyocord</title>
 </head>  <!-- fucking uhh maybe -->
 <body> <!-- mind if i make this page /app/ instead of / so i can hottify the landing page -->
   <center>
-    <br> <img src='//alyocord.com/cdn-1/favicon.ico' height='75' width='75'> <br>
+    <br> <img src='//cdn.alyocord.com/cdn-1/favicon.ico' height='75' width='75'> <br>
     <h1>Alyocord</h1>
     <br><br><br><br>
     <?php

@@ -29,7 +29,7 @@ $tag = $row['nameid'];
   <link href="//cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="//alyocord.com/style.css">
   <script src='//alyocord.com/script.js'></script>
-  <link rel='icon' type='image/x-icon' href='//alyocord.com/cdn-1/favicon.ico'>
+  <link rel='icon' type='image/x-icon' href='//cdn.alyocord.com/cdn-1/favicon.ico'>
   <title>Settings</title>
 </head>
 <body>
@@ -217,7 +217,7 @@ $tag = $row['nameid'];
       }
 
       if (isset($_POST['setPFP'])) {
-        $target_dir = "../../cdn-2/pfp/";
+        $target_dir = "cdn.alyocord.com/cdn-2/pfp/";
         $target_file = $target_dir . $_SESSION['user']['userid'] . ":" . time() . ":" . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
