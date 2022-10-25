@@ -63,7 +63,7 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       foreach ($messages as $msg) {
         $st = $db->query("SELECT * FROM users WHERE id='".$msg['userid']."';");
         $msguser = "Deleted User";
-        $msgpfp = "default.png";
+        $msgpfp = "https://cdn.alyocord.com/cdn-2/pfp/default.png";
         $trbo = null;
         $namid = 0000;
         foreach ($st as $usnm) {
