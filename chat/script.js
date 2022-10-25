@@ -90,7 +90,7 @@ function chat() {
     if (owner == undefined) {
       owner = "Unknown";
     }
-    $('#messages').append("<div id=\"0\"><img class='pfp' src='../cdn-2/pfp/"+ownpfp+"' height='50' width='50'>&nbsp "+owner+" <br> <l style='color: #747678;'>"+escapeHtml(mib)+"</l> </div> <br></strong></div>");
+    $('#messages').append("<div id=\"0\"><img class='pfp' src='https://cdn.alyocord.com/cdn-2/pfp/"+ownpfp+"' height='50' width='50'>&nbsp "+owner+" <br> <l style='color: #747678;'>"+escapeHtml(mib)+"</l> </div> <br></strong></div>");
     var objDiv = document.getElementById("messages");
     objDiv.scrollTop = objDiv.scrollHeight;
   }

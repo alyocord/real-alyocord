@@ -217,7 +217,7 @@ $tag = $row['nameid'];
       }
 
       if (isset($_POST['setPFP'])) {
-        $target_dir = "cdn.alyocord.com/cdn-2/pfp/";
+        $target_dir = "https://cdn.alyocord.com/cdn-2/pfp/";
         $target_file = $target_dir . $_SESSION['user']['userid'] . ":" . time() . ":" . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
