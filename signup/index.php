@@ -83,7 +83,7 @@
                                 
                                 $stmt = $db->prepare(
                                   "INSERT INTO users (username, email, password, pfp, nameid) 
-                                    VALUES (:username, :email, :password, \"default.png\", $nmid)"
+                                    VALUES (:username, :email, :password, \"https://cdn.alyocord.com/cdn-2/pfp/default.png\", $nmid)"
                                 );
                                 
                                 $stmt->bindValue(':username', htmlspecialchars($username));
