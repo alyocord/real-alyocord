@@ -47,7 +47,7 @@ if (!isset($_SESSION['loggedin'])) {
               $usrr->closeCursor();
               // oh god php is ugly
               // like the arrows are ugly, theres no spacing, why cant it be $uusr -> function() instead of $uusr->function() oh
-              // it can i just dont like doing spaces some times also actually nvm idk if it can be like that but lets just go with my hopothosis i think its called
+              // it can i just dont like doing spaces some times also actually nvm idk if it can be like that but lets just go with my ** i misspelled this one ** i think its called
               $turtm = intval($row2['timesturbo']) + 1;
               
               $uusr = $db->prepare("UPDATE users SET turbolast=:time, timesturbo=:ttr WHERE id=:uid");
