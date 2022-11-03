@@ -34,3 +34,60 @@ db.getItem({Key: 'database.sqlite'}, function(err, data) {
         console.log(data);
     }
 });
+
+// when a user sends a message, it will be sent to the s3 bucket
+function send() {
+    var message = document.getElementById("message").value;
+    var username = document.getElementById("username").value;
+    var params = {
+        Bucket: 'alyocord-chat',
+        Key: 'chatlog.txt',
+        Body: message,
+        ContentType: 'text/plain'
+    };
+    s3.putObject(params, function(err, data) {
+        if (err) {
+            console.log(err, err.stack);
+        } else {
+            console.log(data);
+        }
+    });
+}
+
+// if a profile picture is updated, it will be sent to the dynamodb table and s3 bucket
+function updateProfilePicture() {
+    var profilePicture = document.getElementById("profilePicture").value;
+    var params = {
+        Bucket: 'alyocord-chat',
+        Key: 'database.sqlite',
+        Body: profilePicture,
+        ContentType: 'image/png'
+    };
+    s3.putObject(params, function(err, data) {
+        if (err) {
+            console.log(err, err.stack);
+        } else {
+            console.log(data);
+        }
+    });
+}
+
+// list all dynamodb tables
+db.listTables({}, function(err, data) {
+    if (err) {
+        console.log(err, err.stack);
+    } else {
+        console.log(data);
+    }
+});
+
+// internally print the chat log to the console if debug mode is enabled
+function debug() {
+    console.log("Chat log: " + s3.getObject({Key: 'chatlog.txt'}, function(err, data) {
+        if (err) {
+            console.log(err, err.stack);
+        } else {
+            console.log(data);
+        }
+    }));
+}
