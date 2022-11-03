@@ -68,7 +68,7 @@ if ($_SESSION['turbo'] == false) {
   <br><br><br>
   <?php
     if ($_SESSION['turbo'] == true) {
-      $db = new PDO('sqlite:../../database.sqlite');
+      $db = new PDO('sqlite:../../database.sqlite'); // When possible, make this point to an external URI
       $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       $qr = $db->prepare("SELECT * FROM users WHERE id=:uid");
       $qr->bindValue(":uid", $_SESSION['user']['userid']);
