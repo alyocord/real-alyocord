@@ -6,7 +6,8 @@
  * Purpose: Rewrite the login page to be more user friendly, less buggy, and more efficient to edit.
  * Copyright (c) 2022 Elym Holdings LLC
  */
-/* // import the aws sdk
+/* Code commented out as the rewrite is not finished yet
+// import the aws sdk
 var AWS = require('aws-sdk');
 var s3 = new AWS.S3();
 var db = new AWS.DynamoDB();

@@ -8,7 +8,8 @@
  * Purpose: Rewrite the chat to be more user friendly, less buggy, and more efficient to edit.
 */
 
-/* // make an s3 connection to the chat server
+/* Code commented out as the rewrite is not finished yet
+// make an s3 connection to the chat server
 var s3 = new AWS.S3({
     apiVersion: '2021-03-01',
     params: {Bucket: 'alyocord-chat'}
